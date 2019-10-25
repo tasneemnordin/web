@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<title>Siti Tasneem</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Oswald"
+    }
+    
+    body,
+    html {
+        height: 100%;
+        font-family: "Open Sans";
+        text-align: justify;
+    }
+    
+    .bgimg {
+        background-position: center;
+        background-size: cover;
+        background-image: url("me.jpg");
+        min-height: 80%;
+    }
+    
+    .menu {
+        display: none;
+    }
+    
+    .bgimg2 {
+        background-image: url("sunset.jpg")
+    }
+    
+    .bgimg2 {
+        min-height: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+</style>
+
+<body class="w3-light-grey">
+
+    <!-- Links (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-row w3-padding w3-black">
+            <div class="w3-col s3">
+                <a href="#" class="w3-button w3-block w3-black">HOME</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#about" class="w3-button w3-block w3-black">FOOD</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#menu" class="w3-button w3-block w3-black">VIEW</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="contact.html" class="w3-button w3-block w3-black">CONTACT</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Header with image -->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-bottomright w3-center w3-padding-large w3-hide-small">
+            <span class="w3-tag">28th April</span>
+        </div>
+        <!--<div class="w3-display-left">
+            <span class="w3-text-white" style="font-size:70px">Siti<br>Tasneem</span>
+        </div> -->
+        <div class="w3-display-left">
+            <span class="w3-text-white" style="font-size:50px"><i>"A little bit of trouble<br>keeps life from being boring"</i></span>
+        </div>
+    </header>
+
+    <!-- Add a background color and large text to the whole page -->
+
+    <div class="w3-sand w3-large">
+        <h1 class="w3-center w3-padding-64"><span class="w3-wide">Things that I like!</span></h1>
+        <!-- FOOD Container -->
+        <div class="w3-container" id="about">
+            <div class="w3-content" style="max-width:700px">
+
+                <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">FOOD</span></h5>
+                <div class="w3-panel w3-leftbar w3-hover-border-light-blue">
+                    <p><i>Ayam masak merah is a Malaysian traditional dish. This literally means chicken "cooked-red" in English. It is a casserole of chicken pieces in dried chillies sambal. 
+                        Pieces of chicken are first fried to a golden brown then slowly braised in a spicy dried chillies and tomato sauce.</i></p>
+                    <p>Wikipedia, 2019.</p>
+                </div>
+                <img src="ayam.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+                <p><strong>Name of dish:</strong> Ayam Masak Merah </p>
+                <p><strong>Place of origin:</strong> Malaysia </p>
+                <br><br>
+            </div>
+        </div>
+
+        <div class="w3-row w3-padding ">
+            <!-- VIEW Container -->
+            <div class="w3-container w3-black" id="menu">
+                <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">SUNSET</span></h5>
+                <div class="w3-row">
+                    <div class="w3-half w3-center ">
+                        <div class="w3-col">
+                            <img src="sunset.jpg" style="width:90%;max-width:690px" class="w3-margin-top">
+                            <br><br><br><br>
+                        </div>
+                    </div>
+                    <div class="w3-half w3-center">
+                        <div class="w3-justify">
+
+                            <video width="750" height="880" controls autoplay>
+                                <source src="sunsetvid.mp4" style="width:100%" type="video/mp4" class="w3-margin-top">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CAR Container -->
+        <div class="w3-container" id="where" style="padding-bottom:32px;">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">CAR</span></h5>
+                <img src="onyx.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+                <div class="w3-panel w3-leftbar w3-hover-border-light-blue">
+                    <p><i><b>Peugeot Onyx.</b> High performance Supercar, Onyx presents a new and strong aesthetic, with audacious use of materials and technology.
+                            It has a radical, racy silhouette, constructed around the V8 hybrid HDI FAP Rear engine, with 680hp and tailor made carbon fibre chassis created by Peugeot Sport.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- End page content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+        <p class="fa fa-copyright"> Copyright</p>
+                    </footer>
+
+                    <script>
+                        // Tabbed Menu
+                        function openMenu(evt, menuName) {
+                            var i, x, tablinks;
+                            x = document.getElementsByClassName("menu");
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.display = "none";
+                            }
+                            tablinks = document.getElementsByClassName("tablink");
+                            for (i = 0; i < x.length; i++) {
+                                tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+                            }
+                            document.getElementById(menuName).style.display = "block";
+                            evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+                        }
+                        document.getElementById("myLink").click();
+                    </script>
+
+</body>
+
+</html>

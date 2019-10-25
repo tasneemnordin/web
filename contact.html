@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<title>Siti Tasneem</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Oswald"
+    }
+    
+    body,
+    html {
+        height: 100%;
+        font-family: "Open Sans";
+        text-align: justify;
+        background-repeat: repeat;
+        background-attachment: fixed;
+    }
+    
+    .bgimg {
+        background-position: center;
+        background-size: cover;
+        background-image: url("me.jpg");
+        min-height: 80%;
+    }
+    
+    .menu {
+        display: none;
+    }
+    
+    .bgimg2 {
+        background-image: url("sunset.jpg")
+    }
+    
+    .bgimg2 {
+        min-height: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+</style>
+
+<body background="p.jpg">
+
+    <!-- Links (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-row w3-padding w3-black">
+            <div class="w3-col s3">
+                <a href="index.html" class="w3-button w3-block w3-black">HOME</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="index.html" class="w3-button w3-block w3-black">FOOD</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="index.html" class="w3-button w3-block w3-black">VIEW</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="contact.html" class="w3-button w3-block w3-black">CONTACT</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
+        <div class="w3-padding-large w3-padding-32 w3-margin-top w3-center" id="contact">
+            <p><b><h2><i class="fa fa-mobile-phone w3-margin-right w3-center"></i>Contact</h2></b></p><br>
+            <div class="w3-round w3-text-grey w3-center m6 w3-hide-small w3-padding-large w3-white" font: size 25;>
+                <div class="w3-text-dark-grey w3-center">
+                    <h3>Where to Contact</h3>
+                </div>
+                <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-deep-purple"></i>
+                    <a href="mailto:tasneemnordin@gmail.com?Subject=Hello%20again" target="_top">tasneemnordin@gmail.com</a></p>
+                <a href="https://www.instagram.com/tasneemnordin/?hl=ur" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.facebook.com/sititasneem.nordin" class="w3-bar-item w3-button"><i class="fa fa-facebook"></i></a>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+        <p class="fa fa-copyright"> Copyright</p>
+    </footer>
+
+    <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+        }
+        document.getElementById("myLink").click();
+    </script>
+
+</body>
+
+</html>
